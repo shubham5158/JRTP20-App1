@@ -12,6 +12,7 @@ public class PasswordServices {
 	}
 
 	public static String decode(String encodeTxt) {
+		String name = "raju";
 		Decoder decoder = Base64.getDecoder();
 		byte[] decode = decoder.decode(encodeTxt);
 		return new String(decode);
